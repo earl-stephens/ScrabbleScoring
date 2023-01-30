@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Scoring {
 	private HashMap<String, Integer> letterScores = new HashMap<String, Integer>();
-	
+
 	public Scoring() {
 		letterScores.put("A", 1);
 		letterScores.put("B", 3);
@@ -52,3 +52,4 @@ public class Scoring {
 		return letters;
 	}
 }
+
