@@ -10,7 +10,6 @@ class ScoringTest {
 	Scoring scoring = new Scoring();
 	@Test
 	void testForScoringObject() {
-		//Scoring scoring = new Scoring();
 		
 		Assert.assertNotNull(scoring);
 	}

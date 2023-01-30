@@ -36,14 +36,19 @@ public class Scoring {
 	
 	public int scores(String word) {
 		int value = 0;
-		char[] letters;
-		letters = word.toCharArray();
 		
-		for(char letter : letters) {
+		for(char letter : breakUpWord(word)) {
 			String letterKey = String.valueOf(letter).toUpperCase();
 			value += letterScores.get(letterKey);
 		}
 		
 		return value;
+	}
+	
+	private char[] breakUpWord(String word) {
+		char[] letters;
+		letters = word.toCharArray();
+		
+		return letters;
 	}
 }
