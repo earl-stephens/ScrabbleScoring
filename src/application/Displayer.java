@@ -7,13 +7,23 @@ public class Displayer {
 	
 	public void start() {
 		System.out.println("Welcome to Scrabble Scoring!");
+		System.out.println("Press 1 to stop playing.");
+		play();
+	}
+	
+	public void play() {
+		Scanner scanner = new Scanner(System.in);
+		String word;
+		while(true) {
 		System.out.println("Please enter the word you want to score: ");
 		
-		Scanner scanner = new Scanner(System.in);
-		String word = scanner.nextLine();
+		word = scanner.nextLine();
+		if(word.equals("1")) break;
 		
 		System.out.println("The word's score is " + scoring.scores(word));
+		}
 		
 		scanner.close();
+		System.out.println("Thanks for playing!");
 	}
 }
